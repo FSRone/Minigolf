@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    background: #1d1d1f;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.spielfeld{
+    background: rgb(0, 156, 0);
+    position: relative;
+    height: 80vh;
+    width: 40vh;
+    border: 5px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ball{
+    border-radius:50%;
+    background:white;
+    width:16px;
+    height:16px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    z-index:1;
+    cursor: pointer;
+}
+
+.loch{
+    border-radius:50%;
+    background:black;
+    width:24px;
+    height:24px;
+    position: absolute;
+    top:25%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
